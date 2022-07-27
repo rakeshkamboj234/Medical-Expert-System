@@ -1,7 +1,13 @@
-Depending on the type of arthritis, signs and symptoms may include:
-
-Pain
-Stiffness
-Swelling
-Redness
-Decreased range of motion
+no
+yes
+no
+no
+no
+no
+yes
+no
+no
+no
+no
+no
+no

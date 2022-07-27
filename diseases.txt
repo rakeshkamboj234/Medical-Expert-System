@@ -1,6 +1,11 @@
 Alzheimers 
 Arthritis
 Asthma
+Babesiosis
+Celiac
+Crabs
+Cholera
+Dengue
 Diabetes
 Epilepsy
 Glaucoma
@@ -9,5 +14,6 @@ Heat Stroke
 Hyperthyroidism
 Hypothermia
 Jaundice
+Malaria
 Sinusitis
 Tuberculosis

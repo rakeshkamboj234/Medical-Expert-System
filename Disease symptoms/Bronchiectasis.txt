@@ -11,4 +11,3 @@ yes
 yes
 yes
 no
-

@@ -78,14 +78,46 @@ class FactEngine(KnowledgeEngine):
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="yes"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="yes"))
 	def disease_4(self):
 		self.declare(Fact(disease="Babesiosis"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_4(self):
+		self.declare(Fact(disease="Bronchiectasis"))
 				
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="yes"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
 	def disease_5(self):
 		self.declare(Fact(disease="Celiac"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_5(self):
+		self.declare(Fact(disease="Chest_Infection"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_5(self):
+		self.declare(Fact(disease="Chikungunya"))
+		
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="no"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_5(self):
+		self.declare(Fact(disease="Chlamydia"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_5(self):
+		self.declare(Fact(disease="Cholera"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="yes"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_5(self):
+		self.declare(Fact(disease="Chronic Kidney Disease"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="yes"))
+	def disease_5(self):
+		self.declare(Fact(disease="Conjunctivitis_Pink_Eye"))
 			
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_6(self):
 		self.declare(Fact(disease="Crabs"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="yes"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="yes"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_7(self):
+		self.declare(Fact(disease="Dengue"))
 
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="yes"))
 	def disease_7(self):
@@ -94,6 +126,10 @@ class FactEngine(KnowledgeEngine):
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_8(self):
 		self.declare(Fact(disease="Epilepsy"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_9(self):
+		self.declare(Fact(disease="Gastroenteritis"))
 
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="yes"))
 	def disease_9(self):
@@ -107,6 +143,10 @@ class FactEngine(KnowledgeEngine):
 	def disease_11(self):
 		self.declare(Fact(disease="Heat Stroke"))
 
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="yes"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_12(self):
+		self.declare(Fact(disease="Hemophilia"))
+
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
 	def disease_12(self):
 		self.declare(Fact(disease="Hyperthyroidism"))
@@ -115,21 +155,73 @@ class FactEngine(KnowledgeEngine):
 	def disease_13(self):
 		self.declare(Fact(disease="Hypothermia"))
 
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="no"),Fact(fainting="yes"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="yes"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="yes"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_14(self):
+		self.declare(Fact(disease="Insomnia"))
+
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
 	def disease_14(self):
 		self.declare(Fact(disease="Jaundice"))
 
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="yes"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_14(self):
+		self.declare(Fact(disease="Kidney_Stones"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="yes"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_14(self):
+		self.declare(Fact(disease="Liver_Cancer"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_14(self):
+		self.declare(Fact(disease="Lymphoma"))
+
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="yes"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_15(self):
 		self.declare(Fact(disease="Malaria"))
+	
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_15(self):
+		self.declare(Fact(disease="Measles"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="yes"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="yes"))
+	def disease_15(self):
+		self.declare(Fact(disease="Ovarian cancer"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_15(self):
+		self.declare(Fact(disease="Pedal edema"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_15(self):
+		self.declare(Fact(disease="Pleurisy"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
+	def disease_15(self):
+		self.declare(Fact(disease="Sepsis"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="yes"))
+	def disease_15(self):
+		self.declare(Fact(disease="Sickle Cell Disease"))
 
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_16(self):
 		self.declare(Fact(disease="Sinusitis"))
 
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="no"),Fact(restlessness="yes"),Fact(low_body_temp="yes"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="yes"))
+	def disease_16(self):
+		self.declare(Fact(disease="Stroke"))
+
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_17(self):
 		self.declare(Fact(disease="Tuberculosis"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="no"),Fact(cough="yes"),Fact(fainting="yes"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="yes"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_17(self):
+		self.declare(Fact(disease="Vertigo"))
+
+	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="yes"),Fact(blurred_vision="no"))
+	def disease_17(self):
+		self.declare(Fact(disease="Yellow fever"))
 
 	@Rule(Fact(action='check_disease'),Fact(disease=MATCH.disease),salience = -998)
 	def disease(self, disease):

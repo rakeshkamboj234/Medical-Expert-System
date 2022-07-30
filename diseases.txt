@@ -2,18 +2,39 @@ Alzheimers
 Arthritis
 Asthma
 Babesiosis
+Bronchiectasis
 Celiac
-Crabs
+Chest Infection
+Chikungunya
+Chlamydia
 Cholera
+Chronic Kidney Disease
+Conjunctivitis Pink Eye
+Crabs
 Dengue
 Diabetes
 Epilepsy
+Gastroenteritis
 Glaucoma
 Heart Disease
 Heat Stroke
+Hemophilia
 Hyperthyroidism
 Hypothermia
+Insomnia
 Jaundice
+Kidney Stones
+Liver cancer
+Lymphoma
 Malaria
+Measles
+Ovarian cancer
+Pedal edema
+Pleurisy
+Sepsis
+Sickle Cell Disease
 Sinusitis
+Stroke
 Tuberculosis
+Vertigo
+Yellow fever

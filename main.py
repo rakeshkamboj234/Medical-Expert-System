@@ -89,7 +89,7 @@ class FactEngine(KnowledgeEngine):
 
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="yes"),Fact(chest_pain="yes"),Fact(cough="yes"),Fact(fainting="no"),Fact(sore_throat="yes"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_6(self):
-		self.declare(Fact(disease="Chest_Infection"))
+		self.declare(Fact(disease="Chest Infection"))
 
 	@Rule(Fact(action='check_disease'),Fact(headache="yes"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="yes"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_7(self):

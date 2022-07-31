@@ -109,7 +109,7 @@ class FactEngine(KnowledgeEngine):
 
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="no"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="yes"))
 	def disease_11(self):
-		self.declare(Fact(disease="Conjunctivitis_Pink_Eye"))
+		self.declare(Fact(disease="Conjunctivitis Pink Eye"))
 			
 	@Rule(Fact(action='check_disease'),Fact(headache="no"),Fact(back_pain="no"),Fact(chest_pain="no"),Fact(cough="no"),Fact(fainting="no"),Fact(sore_throat="no"),Fact(fatigue="no"),Fact(restlessness="no"),Fact(low_body_temp="no"),Fact(fever="yes"),Fact(sunken_eyes="no"),Fact(nausea="no"),Fact(blurred_vision="no"))
 	def disease_12(self):

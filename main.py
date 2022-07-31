@@ -236,7 +236,7 @@ class FactEngine(KnowledgeEngine):
 		print("==========================================================> \n")
 		print("Common medication and procedures recommendations are as follows:: \n")
 		print(treatments+"\n")
-		print("==========================================================> \n")
+
 
 
 	@Rule(Fact(action='check_disease'),
@@ -329,7 +329,7 @@ def not_found(disease):
 	print("==========================================================> \n")
 	print("Other real doctors' common medications and procedures are as follows: \n")
 	print(disease_treatments+"\n")
-	print("==========================================================> \n")
+
 
 if __name__ == "__main__":
 	load_data()

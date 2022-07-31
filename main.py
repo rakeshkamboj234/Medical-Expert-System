@@ -225,15 +225,19 @@ class FactEngine(KnowledgeEngine):
 
 	@Rule(Fact(action='check_disease'),Fact(disease=MATCH.disease),salience = -998)
 	def disease(self, disease):
-		print("")
+		print("==========================================================> \n")
 		disease_details = get_disease_description(disease)
 		treatments = get_disease_treatments(disease)
-		print("")
+		print("==========================================================> \n")
 		print("You are most likely suffering from %s\n" %(disease))
+		print("==========================================================> \n")
 		print("A brief explanation of the disease is provided below:\n")
 		print(disease_details+"\n")
+		print("==========================================================> \n")
 		print("Common medication and procedures recommendations are as follows:: \n")
 		print(treatments+"\n")
+		print("==========================================================> \n")
+
 
 	@Rule(Fact(action='check_disease'),
 		  Fact(back_pain=MATCH.back_pain),
@@ -313,15 +317,19 @@ def get_disease_treatments(disease):
 
 # shows the details for the predicted disease if none of the facts matched
 def not_found(disease):
-		print("")
-		disease_detail = get_disease_description(disease)
-		disease_treatments = get_disease_treatments(disease)
-		print("")
-		print("You are most likely suffering from %s\n" %(disease))
-		print("Below is a brief description of the disease:\n")
-		print(disease_detail+"\n")
-		print("Other real doctors' common medications and procedures are as follows: \n")
-		print(disease_treatments+"\n")
+	print("==========================================================> \n")
+	disease_detail = get_disease_description(disease)
+	disease_treatments = get_disease_treatments(disease)
+	print("")
+	print("==========================================================> \n")
+	print("You are most likely suffering from %s\n" %(disease))
+	print("==========================================================> \n")
+	print("Below is a brief description of the disease:\n")
+	print(disease_detail+"\n")
+	print("==========================================================> \n")
+	print("Other real doctors' common medications and procedures are as follows: \n")
+	print(disease_treatments+"\n")
+	print("==========================================================> \n")
 
 if __name__ == "__main__":
 	load_data()

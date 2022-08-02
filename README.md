@@ -6,9 +6,8 @@ Expert system shells are used in the creation of expert systems. These shells ar
 <br/>
 <br/>
 DataSet
-<br/>
-There are three distinct types of folders in which we have mentioned all data stored in file:
 
+There are three distinct types of folders in which we have mentioned all data stored in file:
 1) Diseases Description: It will have description of the diseases with its name.
 <br/>
 2) Diseases Symptons: It will have symptons of the diseases with its name.
